@@ -165,12 +165,13 @@
      }
 */
     // 动态更新版权年份
-    (function() {
+    function getYear() {
         var yearSpan = document.getElementById('currentYear');
         if (yearSpan) {
             yearSpan.textContent = new Date().getFullYear();
         }
-    })();
+    }
+    getYear();
 </script>
 {{/*<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>*/}}
 
