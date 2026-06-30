@@ -99,12 +99,13 @@
 <script type="text/javascript">
     window.nps = {"web_base_url": {{.web_base_url}} }
     // 动态更新版权年份
-    (function() {
+    function getYear() {
         var yearSpan = document.getElementById('currentYear');
         if (yearSpan) {
             yearSpan.textContent = new Date().getFullYear();
         }
-    })();
+    }
+    getYear();
 
     // Login Page Flipbox control
     function login() {
